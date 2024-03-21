@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Extract Metadata Tool</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="icon" href="https://cesarhub.fr/wp-content/uploads/cropped-favicon-cesarhub-32x32.png" sizes="32x32">
+   <link rel="icon" href="https://cesarhub.fr/wp-content/uploads/cropped-favicon-cesarhub-192x192.png" sizes="192x192">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.18.0/load-image.all.min.js"></script>
+
+</head>
+<body>
+   <header>
+      <div style="display: flex; justify-content: space-evenly;align-items: center; width: 100%; height: 100%;">
+         <img class="img-Header" src="https://cesarhub.fr/wp-content/uploads/cropped-logoCrop2-1.png" alt="">
+         <div class="menu-Header">
+            <a href="index.html" class="a-Header">Acceuil</a>
+            <a href="index.html#GoogleSearchJsonReader" class="a-Header">Google json reader</a>
+            <a href="index.html#MetaData" class="a-Header a-Header-underline">Extract metadata</a>
+            <a href="index.html#TakeWebsiteData" class="a-Header">Take website data</a>
+         </div>
+      </div>
+   </header>
+
+   
+
+   <input type='file'>
+
+   <script>
+      const inputElement = document.querySelector('input[type="file"]');
+inputElement.addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  loadImage.parseMetaData(file, (data) => {
+    const exifMetadata = data.exif;
+    console.log('EXIF metadata:', exifMetadata);
+  });
+});
+
+   </script>
+</body>
+</html>

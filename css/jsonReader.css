@@ -1,0 +1,93 @@
+#menu{
+   margin-top: 60px;
+   margin-bottom: 60px;
+   width: 100%;
+   min-height: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+#sous-menu{
+   flex-wrap: wrap;
+   border-radius: 20px;
+   min-width: 90%;
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#sous-menu button{
+   width: 100px;
+   height: 100px;
+   background: none;
+   cursor: pointer;
+}
+
+#sous-menu a{
+   text-decoration: none;
+   padding: 15px;
+   border-radius: 15px;
+   background-color: #8a2be2;
+   color: white;
+}
+
+.divContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+.title{
+   font-size: 30px;
+   padding: 40px;
+   padding-bottom: 20px;
+}
+.numberResult{
+   font-size: 18px;
+   padding-bottom: 40px;
+}
+
+.ParentBaliseDivContainer{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+
+body > div:nth-child(even){
+   background-color: #e9ecf5;
+}
+
+.MilieuBaliseDivContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 90%;
+   margin: 40px;
+   padding: 20px;
+   border-radius: 20px;
+}
+
+.EnfantBaliseDivContainer{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   margin-bottom: 60px;
+}
+
+.baliseContainer{
+   background-color: white;
+   border-radius: 14px;
+   word-wrap: break-word;
+   width: 400px;
+   min-height: 300px;
+   padding: 20px;
+   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+   
+}
